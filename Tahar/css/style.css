@@ -115,7 +115,7 @@ body a:hover{
 }
 .banner-bottom {
     background-color: #CADDE1;
-    min-height: 350px;
+    min-height: 350px;  
 	position:relative;
 }
 .banner-text {
@@ -331,6 +331,11 @@ img.zoom-img:hover{
 	-o-transition-duration: 750ms;
 	overflow: hidden;
 }
+/*--Carousel---*/
+.item{
+	max-height: 450px;
+}
+/*--Carousel---*/
 /*--services--*/
 .services {
     padding: 5em 0 6em;
@@ -520,9 +525,10 @@ img.zoom-img:hover{
     font-family: 'OleoScript-Regular';
 }
 .menu-text-left h6 {
-    font-size: 1em;
+    font-size: 1,1em;
+    letter-spacing: 0.1em;
     margin: 0;
-    color: #7DB0BB;
+    color: #6B9E9B;
 }
 .menu-text-midle {
   float: left;

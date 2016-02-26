@@ -15,7 +15,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
 
 <!-- //Custom Theme files -->
-<link href="css/bootstrap.css" type="text/css" rel="stylesheet" media="all">
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" type="text/css" rel="stylesheet" media="all">
 <link href="css/style.css" type="text/css" rel="stylesheet" media="all">
 
 </head>
@@ -46,7 +46,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 							<ul class="nav navbar-nav navbar-center cl-effect-14">
 								<li><a href="index.html" class="active">Bienvenue</a></li>
-								<li><a href="#about">A propos</a></li>					
+								<li><a href="#carousel">Galerie</a></li>					
 								<li><a href="#menu">Pizzas</a></li>
 							<!--	<li><a href="gallery.html">Gallery</a></li>	-->
 								<li><a href="#contact">Contact</a></li>
@@ -64,14 +64,29 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	<div class="banner-bottom">
 		<div class="container">
 			<div class="banner-text">
-				<h3>Offres Spéciales</h3>
-				<p>Le Mercredi 2 Pizzas achetés la 3ème offerte<br> Et le Jeudi toutes les pizzas à 7.50 &euro; (8 &euro; avec une cannette)<br>Commandez au<a href="tel:0667365411">06 67 36 54 11</a></p>
-				<!--<a class="btn btn-1 btn-1b">More</a>   -->
+				<h3>Offres Speciales</h3>
+				<p>Le Mercredi 2 Pizzas achetés la 3ème offerte<br> Et le Jeudi toutes les pizzas à 7.50 &euro; (8 &euro; avec une cannette)<br>Commandez au 06.67.36.54.11</p>   
+				<!--	<a class="btn btn-1 btn-1b">More</a>   -->
+				
+				<a data-toggle="modal" href="#infos" class="btn btn-1 btn-1b">Offres Spéciales</a>
+					<div class="modal" id="infos">
+						<div class="modal-dialog">
+    						<div class="modal-content">
+      							<div class="modal-header">
+        							<button type="button" class="close" data-dismiss="modal">x</button>
+									<h3 class="modal-title">Offres Spéciales</h3>
+      							</div>
+      							<div class="modal-body">
+        							<p>Le Mercredi 2 Pizzas achetés la 3ème offerte<br> Et le Jeudi toutes les pizzas à 7.50 &euro; (8 &euro; avec une cannette)<br>Commandez au 06.67.36.54.11</p>
+      							</div>
+    						</div>
+  						</div>
+					</div>
 			</div>  
 			<!--welcome-->
 			<div class="welcome" id="welcome">
 				<h3 class="title">Bienvenue</h3>
-				<p>Nous sommes ouvert tous les jours de 18h à 22h30,<br> n'hesitez pas à commander au<br> <a href="tel:0667365411">06 67 36 54 11</a> </p>
+				<p>Nous sommes ouvert tous les jours de 18h à 22h30,<br> n'hesitez pas à commander au <br> <a href="tel:0667365411"> 06 67 36 54 11 </a></p>
 				<div class="welcome-info">
 					<div class="col-md-6 welcome-grids">
 						<div class="welcome-img">
@@ -129,6 +144,31 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		</div>
 	</div> -->
 	<!--//services-->
+
+	<!--// Caroussel -->
+
+	<div id="carousel" class="carousel slide" data-ride="carousel">
+       	<ol class="carousel-indicators">
+	        <li data-target="#carousel" data-slide-to="0" class="active"></li>
+	        <li data-target="#carousel" data-slide-to="1"></li>
+	        <li data-target="#carousel" data-slide-to="2"></li>
+	        <li data-target="#carousel" data-slide-to="3"></li>
+      	</ol>
+      	<div class="carousel-inner">
+	        <div class="item active"> <img src="images/img19.jpg" alt="Architecture"></div>
+	        <div class="item"> <img src="images/img16.jpg" alt="Architecture"></div>
+	        <div class="item"> <img src="images/img17.jpg" alt="Architecture"></div>
+	        <div class="item"> <img src="images/img18.jpg" alt="Architecture"></div>
+      	</div>
+	        <a class="left carousel-control" href="#carousel" data-slide="prev">
+	        <span class="glyphicon glyphicon-chevron-left"></span>
+	        </a>
+	        <a class="right carousel-control" href="#carousel" data-slide="next">
+	        <span class="glyphicon glyphicon-chevron-right"></span>
+	        </a>
+    </div>
+
+
 	<!--menu-->
 	<div class="menu" id="menu">
 		<div class="container">
@@ -257,53 +297,53 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 								<div class="col-md-6 menu-grids">
 									<div class="menu-text">
 										<div class="menu-text-left">
-											<h4>Voluptate cillum fugiat.</h4>
-											<h6>Cheese, tomato, mushrooms, onions.</h6>
+											<h4>Royale</h4>
+											<h6>Tomate, Fromage, Jambon, Champignons, Olives, Origan</h6>
 										</div>
 										<div class="menu-text-midle">
 											<span class="line"> </span>
 										</div>
 										<div class="menu-text-right">
-											<h4>$50</h4>
+											<h4>7,50 &euro;</h4>
 										</div>
 										<div class="clearfix"> </div>
 									</div>	
 									<div class="menu-text">
 										<div class="menu-text-left">
-											<h4>Metus varius laoreet.</h4>
-											<h6>Chicken, mozzarella cheese, onions.</h6>
+											<h4>La Boisée</h4>
+											<h6>Crême Fraiche, Poulet, Poivrons, Oignons, Origan</h6>
 										</div>
 										<div class="menu-text-midle">
 											<span class="line"> </span>
 										</div>
 										<div class="menu-text-right">
-											<h4>$62</h4>
+											<h4>7,50 &euro;</h4>
 										</div>
 										<div class="clearfix"> </div>
 									</div>
 									<div class="menu-text">
 										<div class="menu-text-left">
-											<h4>Donec sodales magna.</h4>
-											<h6>Tuna, Sweetcorn, Cheese.</h6>
+											<h4>Algérienne</h4>
+											<h6>Tomate, Crême Fraiche, Viande Hachée, Vache qui rit, Olives, Origan</h6>
 										</div>
 										<div class="menu-text-midle">
 											<span class="line"> </span>
 										</div>
 										<div class="menu-text-right">
-											<h4>$25</h4>
+											<h4>7,50 &euro;</h4>
 										</div>
 										<div class="clearfix"> </div>
 									</div>
 									<div class="menu-text">
 										<div class="menu-text-left">
-											<h4>Saugue velit cursus.</h4>
-											<h6>Pineapple, Minced Beef, Cheese.</h6>
+											<h4>4 Fromages</h4>
+											<h6>Tomate, Fromage, Gorgonzola, Ricotta, Olives, Origan</h6>
 										</div>
 										<div class="menu-text-midle">
 											<span class="line"> </span>
 										</div>
 										<div class="menu-text-right">
-											<h4>$30</h4>
+											<h4>8,00 &euro;</h4>
 										</div>
 										<div class="clearfix"> </div>
 									</div>
@@ -311,53 +351,53 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 								<div class="col-md-6 menu-grids">
 									<div class="menu-text">
 										<div class="menu-text-left">
-											<h4>Arcu pede enim justo.</h4>
-											<h6>Tuna, Sweetcorn, Cheese.</h6>
+											<h4>Orientale</h4>
+											<h6>Tomate, Fromage, Merguez, Poivrons, Olives, Origan</h6>
 										</div>
 										<div class="menu-text-midle">
 											<span class="line"></span>
 										</div>
 										<div class="menu-text-right">
-											<h4>$50</h4>
+											<h4>8,00 &euro;</h4>
 										</div>
 										<div class="clearfix"> </div>
 									</div>	
 									<div class="menu-text">
 										<div class="menu-text-left">
-											<h4>Cras dapibussemper nisi.</h4>
-											<h6>Pineapple, Minced Beef, Cheese.</h6>
+											<h4>La Speciale</h4>
+											<h6>Tomate, Fromage, Tomates Fraiches, Aubergines, Persillades, Ricotta, Olives, Origan</h6>
 										</div>
 										<div class="menu-text-midle">
 											<span class="line"> </span>
 										</div>
 										<div class="menu-text-right">
-											<h4>$62</h4>
+											<h4>8,00 &euro;</h4>
 										</div>
 										<div class="clearfix"> </div>
 									</div>
 									<div class="menu-text">
 										<div class="menu-text-left">
-											<h4>Quam semper libero.</h4>
-											<h6>Cheese, tomato, mushrooms, onions.</h6>
+											<h4>Fruits de Mer</h4>
+											<h6>Tomate, Fromage, Coktail de fruits de mer, Tomates Fraiches, Persillades, Olives, Origan</h6>
 										</div>
 										<div class="menu-text-midle">
 											<span class="line"> </span>
 										</div>
 										<div class="menu-text-right">
-											<h4>$25</h4>
+											<h4>8,00 &euro;</h4>
 										</div>
 										<div class="clearfix"> </div>
 									</div>
 									<div class="menu-text">
 										<div class="menu-text-left">
-											<h4>Nam eget dui Etiam.</h4>
-											<h6>Chicken, mozzarella cheese, onions.</h6>
+											<h4>Provençale</h4>
+											<h6>Tomate, Fromage, Aubergine, Poivron, Tomates Fraiche, Olives, Origan</h6>
 										</div>
 										<div class="menu-text-midle">
 											<span class="line"> </span>
 										</div>
 										<div class="menu-text-right">
-											<h4>$30</h4>
+											<h4>8,00 &euro;</h4>
 										</div>
 										<div class="clearfix"> </div>
 									</div>
@@ -371,53 +411,79 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 								<div class="col-md-6 menu-grids">
 									<div class="menu-text">
 										<div class="menu-text-left">
-											<h4>Voluptate cillum fugiat.</h4>
-											<h6>Cheese, tomato, mushrooms, onions.</h6>
+											<h4>Tata</h4>
+											<h6>Tomate, Fromage, Tomates Fraiche, Roquefort, Olives, Origan</h6>
 										</div>
 										<div class="menu-text-midle">
 											<span class="line"> </span>
 										</div>
 										<div class="menu-text-right">
-											<h4>$50</h4>
+											<h4>8,00 &euro;</h4>
 										</div>
 										<div class="clearfix"> </div>
 									</div>	
 									<div class="menu-text">
 										<div class="menu-text-left">
-											<h4>Metus varius laoreet.</h4>
-											<h6>Chicken, mozzarella cheese, onions.</h6>
+											<h4>Quenelle</h4>
+											<h6>Crême fraiche, Poulet, Reblochon, Olives, Origan</h6>
 										</div>
 										<div class="menu-text-midle">
 											<span class="line"> </span>
 										</div>
 										<div class="menu-text-right">
-											<h4>$62</h4>
+											<h4>8,00 &euro;</h4>
 										</div>
 										<div class="clearfix"> </div>
 									</div>
 									<div class="menu-text">
 										<div class="menu-text-left">
-											<h4>Donec sodales magna.</h4>
-											<h6>Tuna, Sweetcorn, Cheese.</h6>
+											<h4>La Bad</h4>
+											<h6>Tomate, Fromage, Aubergines,Poivrons, Merguez, Salade Mechouïa, Persillade,Crême fraiche, Olives, Origan</h6>
 										</div>
 										<div class="menu-text-midle">
 											<span class="line"> </span>
 										</div>
 										<div class="menu-text-right">
-											<h4>$25</h4>
+											<h4>8,00 &euro;</h4>
 										</div>
 										<div class="clearfix"> </div>
 									</div>
 									<div class="menu-text">
 										<div class="menu-text-left">
-											<h4>Saugue velit cursus.</h4>
-											<h6>Pineapple, Minced Beef, Cheese.</h6>
+											<h4>Kameleon</h4>
+											<h6>Tomate, Fromage, Viande hachée, Poivron, Oignon, Oeuf, Persillade, Olives, Origan</h6>
 										</div>
 										<div class="menu-text-midle">
 											<span class="line"> </span>
 										</div>
 										<div class="menu-text-right">
-											<h4>$30</h4>
+											<h4>8,50 &euro;</h4>
+										</div>
+										<div class="clearfix"> </div>
+									</div>
+									<div class="menu-text">
+										<div class="menu-text-left">
+											<h4>Savoyarde</h4>
+											<h6>Crême fraiche, Fromage, Jambon, Oignons, Reblochon, Pommes de terre, Olives, Origan</h6>
+										</div>
+										<div class="menu-text-midle">
+											<span class="line"> </span>
+										</div>
+										<div class="menu-text-right">
+											<h4>9,00 &euro;</h4>
+										</div>
+										<div class="clearfix"> </div>
+									</div>
+									<div class="menu-text">
+										<div class="menu-text-left">
+											<h4>Spéciale T</h4>
+											<h6>Tomate, Fromage, Crême fraiche, Viande hachée, Merguez, Oignons, Poivrons, Champignons, Ricotta, Salade Mechouïa, Olives, Origan</h6>
+										</div>
+										<div class="menu-text-midle">
+											<span class="line"> </span>
+										</div>
+										<div class="menu-text-right">
+											<h4>9,50 &euro;</h4>
 										</div>
 										<div class="clearfix"> </div>
 									</div>
@@ -425,53 +491,79 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 								<div class="col-md-6 menu-grids">
 									<div class="menu-text">
 										<div class="menu-text-left">
-											<h4>Arcu pede enim justo.</h4>
-											<h6>Tuna, Sweetcorn, Cheese.</h6>
+											<h4>Poulet</h4>
+											<h6>Tomate, Fromage, Crême fraiche, Poulet, Oignon, Persillade, Poivron, Champignons, Ricotta, Salade Méchouïa, Olives, Origan</h6>
 										</div>
 										<div class="menu-text-midle">
 											<span class="line"> </span>
 										</div>
 										<div class="menu-text-right">
-											<h4>$50</h4>
+											<h4>8,50 &euro;</h4>
 										</div>
 										<div class="clearfix"> </div>
 									</div>	
 									<div class="menu-text">
 										<div class="menu-text-left">
-											<h4>Cras dapibussemper nisi.</h4>
-											<h6>Pineapple, Minced Beef, Cheese.</h6>
+											<h4>Raviole</h4>
+											<h6>Tomate, Fromage, Ravioles, Crême fraiche, Persillades, Olives, Origan</h6>
 										</div>
 										<div class="menu-text-midle">
 											<span class="line"> </span>
 										</div>
 										<div class="menu-text-right">
-											<h4>$62</h4>
+											<h4>8,50 &euro;</h4>
 										</div>
 										<div class="clearfix"> </div>
 									</div>
 									<div class="menu-text">
 										<div class="menu-text-left">
-											<h4>Quam semper libero.</h4>
-											<h6>Cheese, tomato, mushrooms, onions.</h6>
+											<h4>Raviole Roquefort</h4>
+											<h6>Crême fraiche, Fromage, Ravioles, Roquefort, Tomates Fraiche, Olives, Origan</h6>
 										</div>
 										<div class="menu-text-midle">
 											<span class="line"> </span>
 										</div>
 										<div class="menu-text-right">
-											<h4>$25</h4>
+											<h4>8,50 &euro;</h4>
 										</div>
 										<div class="clearfix"> </div>
 									</div>
 									<div class="menu-text">
 										<div class="menu-text-left">
-											<h4>Nam eget dui Etiam.</h4>
-											<h6>Chicken, mozzarella cheese, onions.</h6>
+											<h4>Marocaine</h4>
+											<h6>Tomate, Fromage, Merguez, Poivrons, Ricotta, Salade Mechouïa, Crême fraiche, Olives, Origan</h6>
 										</div>
 										<div class="menu-text-midle">
 											<span class="line"> </span>
 										</div>
 										<div class="menu-text-right">
-											<h4>$30</h4>
+											<h4>8,50 &euro;</h4>
+										</div>
+										<div class="clearfix"> </div>
+									</div>
+									<div class="menu-text">
+										<div class="menu-text-left">
+											<h4>Tunisienne</h4>
+											<h6>Tomate, Fromage, Thon, Salade Mechouïa, Huile d'olive, Olives, Origan</h6>
+										</div>
+										<div class="menu-text-midle">
+											<span class="line"> </span>
+										</div>
+										<div class="menu-text-right">
+											<h4>8,50 &euro;</h4>
+										</div>
+										<div class="clearfix"> </div>
+									</div>
+									<div class="menu-text">
+										<div class="menu-text-left">
+											<h4>Calzone</h4>
+											<h6>Tomate, Fromage, Jambon, Oeuf, Ricotta, Origan</h6>
+										</div>
+										<div class="menu-text-midle">
+											<span class="line"> </span>
+										</div>
+										<div class="menu-text-right">
+											<h4>8,50 &euro;</h4>
 										</div>
 										<div class="clearfix"> </div>
 									</div>
@@ -481,8 +573,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						</div>	
 					</li>
 				</ul>
-				<div id="loadMore">Load more</div>
-				<div id="showLess">Show less</div>
+				<div id="loadMore">Plus de Pizza</div>
+				<div id="showLess">Reduire la Carte</div>
 			</div>
 		</div>
 	</div>
@@ -490,8 +582,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	
 	<!--//menu-->
 	<!-- testimonial -->
-	<div class="testimonial" id="about">
-		<!-- container -->
+<!--	<div class="testimonial" id="about">
+		 container
 		<div class="container">
 			<h3 class="title">Feedback About us</h3>
 			
@@ -542,8 +634,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				</ul>
 			</div>
 		</div>
-		<!-- //container -->
-	</div>
+		container 
+	</div> -->
+
 	<!-- //testimonial -->
 
 	<!-- contact -->
@@ -567,7 +660,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						Grenoble
 					</p>
 					<h4>Prise de Commande</h4>
-					<p>Telephone: 06 67 36 54 11 <br>
+					<p>Telephone: <a href="tel:0667365411"> 06 67 36 54 11 </a><br>
 						E-mail: <a href="mailto:info@example.com">tahar@taharpizza.com</a>
 					</p>
 				</div>
@@ -609,7 +702,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			<div class="col-md-4 footer-left">
 		 		<h4>Details</h4>
 				<ul>
-					<li><a href="#about">A Propos</a></li>
+					<li><a href="#carousel">Galerie</a></li>
 					<li><a href="#menu">Pizzas</a></li>
 					<li><a href="#welcome">Bienvenue</a></li>
 					<li><a href="#contact">Contact</a></li>
@@ -635,12 +728,13 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	<!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="js/bootstrap.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script> 
 
     <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
 
     <!--js-->
-	<script src="js/jquery-1.11.1.min.js"></script> 
+	
+	 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 	<script src="js/modernizr.custom.js"></script>
 	<!-- //js -->
 	<script>
